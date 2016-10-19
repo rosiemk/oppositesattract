@@ -1,2 +1,0 @@
-# oppositesattract
-CFG ADVANCED COURSE
