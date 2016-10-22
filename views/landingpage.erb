@@ -26,46 +26,52 @@
 				<br>
 					<h1>Love being different.</h1>
 				</div>
-				
+				<br>
 
 
 
-				<form class="form-inline" method="post" action="/signup">
+				<form class="form-inline col-centered" method="post" action="/signup">
 					<h4>Register your interest</h4>
 					
-					<div class="input-group">
-					<div class="form-group">
-						<label for="name" class="sr-only">Name</label>
-						<input type="name" class="form-control" id="name" placeholder="Name">
-					</div>
-					<div class="form-group">
-						<label for="email" class="sr-only">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="Email address">
-					</div>
-					</div>
-					<div class="form-group">
-						I am
-					</div>
-					<div class="form-group">
-						<label for="i_am" class="sr-only"></label>
-							<select class="form-control" id="i_am">
-								<option>a man</option>
-								<option>a woman</option>
-								<option>neither</option>
-							</select>
-					</div>
-					<div class="form-group">
-						looking for
-					</div>
-					<div class="form-group">
-						<label for="looking_for" class="sr-only"></label>
-							<select class="form-control" id="looking_for">
-								<option>a man</option>
-								<option>a woman</option>
-								<option>both</option>
-							</select>
-					</div>
-					<button class="btn-custom btn" type="button" id="submit">Submit</button>
+					<div class="row">	
+							
+								<div class="form-group col-xs-10 col-sm-3">
+									<label for="name" class="sr-only">Name</label>
+									<input type="name" class="form-control" id="name" placeholder="Name">
+								</div>
+								<div class="form-group col-xs-10 col-sm-3">
+									<label for="email" class="sr-only">Email</label>
+									<input type="email" class="form-control" id="email" placeholder="Email address">
+								</div>
+							
+								
+							<div class="input-group col-xs-8 col-sm-4 row" id="preferences_group">
+								<div class="form-group preferences col-xs-3" id="i_am">
+									I am
+								</div>
+								<div class="form-group form preferences col-xs-3">
+									<label for="i_am" class="sr-only"></label>
+										<select class="form-control" id="gender">
+											<option>a man</option>
+											<option>a woman</option>
+											<option>neither</option>
+										</select>
+								</div>
+								<div class="form-group preferences col-xs-3" id="looking_for">
+									looking for
+								</div>
+								<div class="form-group preferences col-xs-3">
+									<label for="looking_for" class="sr-only"></label>
+										<select class="form-control" id="pref">
+											<option>a man</option>
+											<option>a woman</option>
+											<option>men and women</option>
+										</select>
+								</div>
+							</div>
+								<button class="btn-custom btn col-xs-2 col-sm-2" type="button" id="submit">Submit</button>
+							
+					</div>	
 
 				</form>
 
