@@ -1,45 +1,64 @@
-/*********** OPPOSITES ATTRACT CSS ***************/
+@font-face{font-family: Museo-Sans; src: url('fonts/museo_sans_w01_700.ttf');}
+@import url(//db.onlinewebfonts.com/c/668ac2105fe581bdda3e4fcf1c62933f?family=MuseoSansW01-700);
+
+
+body{
+	font-family: Museo-Sans, Helvetica,Arial,sans-serif;
+	color: #333;
+}
 
 .container{
-	max-width: 1080px;
+	width: 100%;
+	min-height: 100%;
 	margin: 0 auto;
-	position: relative;
-	padding-left: 64px;
-	padding-right: 64px;
-}
-#register{
-	font-size: 1em;
-	padding-left: 12px;
-}
-div.inputs.col-sm-10{
-	padding-left:0;
-	padding-right:0;
-}
-div.col-sm-4, div.col-sm-3, div.col-sm-2, div.col-sm-1{
-	padding-left:0;
-	padding-right:0;
-}
-.table{
-	padding: 0px;
+	/*background-color: yellow;*/
+
+	/*#87f12b : #770ad7*/
 }
 
-
-
-div.form-group{
-	border-right: 0px;
-	padding-right: 0px;
-	margin-right: 0px;
-}
-.form-control{
-	border-left:0;
-	border-right:0;
-}
-input.form-control, select.form-control {
-	border-radius:0px;
-	border-color: #aaa;
-}
-input#email.form-control{
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
+.col-centered{
+	float:none !important;
+	margin: 0 auto;
 }
 
+.btn-custom{
+	padding: 0.5em;
+	border-radius: 1px;
+	background-color: #ffffff;
+	border: 2px solid #770ad7;
+	color: #770ad7;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#login{
+	float: right;
+	margin-top: 1em;
+	margin-right:2em;
+}
+ 
+ button.btn-custom:hover, button.btn-custom:active, button.btn-custom:focus {
+  color: #87f12b !important;
+  border-color: #87f12b !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.landing-content{
+	margin-top:8em;
+}
+#title{
+	font-family: Museo-Sans;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: 700;
+	font-size: 75px;
+	color: #770ad7;
+
+}
+
+.contrast{
+	background-color:#770ad7;
+	color: #87f12b;
+	padding:10px;
+}
