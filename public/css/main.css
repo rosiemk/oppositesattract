@@ -1,6 +1,8 @@
 @font-face{font-family: Museo-Sans; src: url('fonts/museo_sans_w01_700.ttf');}
 @import url(//db.onlinewebfonts.com/c/668ac2105fe581bdda3e4fcf1c62933f?family=MuseoSansW01-700);
+	
 
+	/*colours: #87f12b : #770ad7*/
 
 body{
 	font-family: Museo-Sans, Helvetica,Arial,sans-serif;
@@ -12,8 +14,6 @@ body{
 	min-height: 100%;
 	margin: 0 auto;
 	/*background-color: yellow;*/
-
-	/*#87f12b : #770ad7*/
 }
 
 .col-centered{
@@ -23,12 +23,21 @@ body{
 
 .btn-custom{
 	padding: 0.5em;
-	border-radius: 1px;
+	border-radius: 2px;
 	background-color: #ffffff;
 	border: 2px solid #770ad7;
 	color: #770ad7;
 	font-weight: 600;
 	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+#submit{
+	border: 2px solid #770ad7;
+	color: #770ad7;
+	font-weight: 700;
+	font-size: 18px;
+	padding:0 6px;
+	border-radius: 2px;
 }
 
 #login{
@@ -39,7 +48,7 @@ body{
  
  button.btn-custom:hover, button.btn-custom:active, button.btn-custom:focus {
   color: #87f12b !important;
-  border-color: #87f12b !important;
+  border: 2px solid #87f12b !important;
   box-shadow: none !important;
   outline: 0 !important;
 }
@@ -61,4 +70,8 @@ body{
 	background-color:#770ad7;
 	color: #87f12b;
 	padding:10px;
+}
+
+.form{
+	text-indent: 2px;
 }
