@@ -112,4 +112,11 @@ select:not([multiple]){
 	max-width:80px;
 }
 
+/* ------------- WELCOME PAGE ------------- */
+
+#blue{
+	color: blue;
+}
+
+
 

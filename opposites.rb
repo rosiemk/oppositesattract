@@ -1,10 +1,16 @@
 require 'sinatra'
 
 get('/') do
-	erb :opposites
+	erb :signup
 end
 
-get('/:name') do
+post('/signup') do
 	@name = params[:name].capitalize
-	erb :opposites
+
+	puts params
+
+	erb :welcome  # change this page to the page where the next values will go.
+
 end
+
+
