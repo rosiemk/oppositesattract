@@ -10,95 +10,91 @@
 
 
 <body>
-	<% if @name %>
-		<h1>Hello <%= @name %>...</h1>
-	<% else %>
-		<h1>Hello...</h1>
-	<% end %>
 
-	<form method="post" action="/signup" id="contact-form">
-		<h1 id="blue">Sign up here!</h1>
+	<div class = "container">
 
-		<fieldset class="form-group">
-			<legend>Sign up</legend>
-		<div class="form-group">
-			
-			<label for="inputEmail">Email address</label>
-			<input type= "email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-		</div>
-
-		<div class="form-group">
-		   	<label for="inputPassword">Password</label>
-		   	<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-		 </div>
-		</fieldset>
-
-		<fieldset class="form-group">
-			<legend>Create a profile</legend>
-		 <div class="form-group">
-		   	<label for="name">Your Name</label>
-		   	<input type="name" class="form-control" id="name" placeholder="Password">
-		 </div>
-
-		 <fieldset class="form-group">
-			<p>Looking for...</p>
-		 <div class="form-check">
-		    <label class="form-check-label">
-		      <input type="checkbox" class="form-check-input">
-		      men
-		    </label>
-		  </div>
-		   <div class="form-check">
-		    <label class="form-check-label">
-		      <input type="checkbox" class="form-check-input">
-		      women
-		    </label>
-		  </div>
-		  
-		</fieldset>
-		  <div class="form-group">
-		    <label for="furtherInformation">Write some information about yourself.  Don't make it boring.</label>
-		    <textarea class="form-control" id="information" rows="3"></textarea>
-		  </div>
-
-		  <div class="form-group">
-		    <label for="exampleInputFile">Upload a profile picture</label>
-		    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-		    <small id="fileHelp" class="form-text text-muted">Make sure you look nice.</small>
-		  </div>
-		</fieldset>
+			<div class="col-sm-10 col-centered  landing-content">
+				<div class="col-centered text-center">
+					<h1 id="title"><span class="contrast">Opposites</span> attract</h1> 
+				<br>
+					<% if @name %>
+						<h2>Hello <%= @name %>...</h2>
+					<% else %>
+						<h2>Love being different.</h2>
+					<% end %>
+					
+				</div>
+				<br>
+			</div>
 
 
 
-		 
-		    </div>
-		  </fieldset>
-		  <div class="form-check">
-		    <label class="form-check-label">
-		      <input type="checkbox" class="form-check-input">
-		      Check me out
-		    </label>
-		  </div>
-		  <button type="submit" class="btn btn-primary">Submit</button>
+		<form method="post" action="/welcome" id="contact-form" class = "col-sm-8 col-centered">  <!--should action be /signup-->
+
+
+			<fieldset class="form-group">
+				<legend>Create a profile</legend>
+			 <div class="form-group">
+			   	<label for="name">Your Name</label>
+			   	<input type="name" class="form-control" id="name" placeholder="Password">
+			 </div>
+
+			 <fieldset class="form-group">
+				<p>Your age</p>
+			 <div class="form-check">
+			    <label class="form-check-label">
+			      <input type="checkbox" class="form-check-input">
+			      18-21
+			    </label>
+			  </div>
+			   <div class="form-check">
+			    <label class="form-check-label">
+			      <input type="checkbox" class="form-check-input">
+			      22-30
+			    </label>
+			  </div>
+			   <div class="form-check">
+			    <label class="form-check-label">
+			      <input type="checkbox" class="form-check-input">
+			      30-40
+			    </label>
+			  </div>
+			</fieldset>
+
+			<fieldset class="form-group">
+				<p>What age are you looking for?</p>
+			 <div class="form-check">
+			    <label class="form-check-label">
+			      <input type="checkbox" class="form-check-input">
+			      18-21
+			    </label>
+			  </div>
+			   <div class="form-check">
+			    <label class="form-check-label">
+			      <input type="checkbox" class="form-check-input">
+			      22-30
+			    </label>
+			  </div>
+			   <div class="form-check">
+			    <label class="form-check-label">
+			      <input type="checkbox" class="form-check-input">
+			      30-40
+			    </label>
+			  </div>
+			</fieldset>
+
+			  <div class="form-group">
+			    <label for="furtherInformation">Write some information about yourself.  Don't make it boring.</label>
+			    <textarea class="form-control" id="information" rows="3"></textarea>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="exampleInputFile">Upload a profile picture</label>
+			    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+			    <small id="fileHelp" class="form-text text-muted">Make sure you look nice.</small>
+			  </div>
+			</fieldset>
 		</form>
-			</form>
-
-
-
-	<div id="contact-form">
-		<h1>Sign up here!</h1>
-		<form method="post" action="/signup">  <!-- '/signup' action is URL that the form will be submitted to, relevant to absolute URL (localhost:4567)-->
-			<label for ="name">Name: </label>
-			<input type="text" id="name" name="name" value="" placeholder="Write name here" required="required" autofocus="autofocus"/>
-			<label for="email">Email address: </label>
-			<input type="email" id="email" name="email" value="" placeholder="example@example.com" required="required"/>
-			<label for ="gender">Age: </label>
-			<input type="text" id="age" name="age" value="" placeholder="Write age here" required ="required" autofocus="autofocus"/>
-			<label for ="gender">Gender: </label>
-			<input type="text" id="gender" name="gender" value="" placeholder="Write gender here" required ="required" autofocus="autofocus"/>
-			<label for="looking_for">Looking for: </label>
-			<input type="text" id="looking_for" name="looking_for" value="" placeholder="Male/Female/Other" required="required" autofocus="autofocus"/>
-			<input type="submit" value="submit" id="submit-button">
-		</form>
-	</div>
+	
+	</div> <!-- container end -->
 </body>
