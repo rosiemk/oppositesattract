@@ -24,6 +24,31 @@ get('/welcome') do
 	
 end 
 
+post('/welcome') do
+	redirect "/quiz"
+	@name = params[:name]
+end
+
+get ('/quiz') do
+	erb :quiz
+
+end 
+
+post('/quiz') do
+		q1 = params[:q1]
+		q2 = params[:q2]
+		q3 = params[:q3]
+		q4 = params[:q4]
+		q5 = params[:q5]
+		puts q1
+		puts q2
+		puts q3
+		puts q4
+		puts q5
+		# questions 1-5 get answers from quiz and store as vaiables.
+
+end
+
 
 
 	
