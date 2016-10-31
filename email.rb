@@ -17,14 +17,18 @@ Pony.options = {
 	}
 }
 
-message ={
+
+
+def send_email(name, email)  #function
+
+	message ={
 	
-	:from => 'rvmunrokerr@gmail.com',
-	:to => 'rvmunrokerr@gmail.com', #@@email,   #how do i include email var from opposites.rb file?
-	:subject => 'Welcome',
-	:body => 'Thanks for signing up to our newsletter!'
+		:from => 'rvmunrokerr@gmail.com',
+		:to => "#{name}<#{email}>",   #string interpolation
+		:subject => 'Welcome',
+		:body => 'Thanks for signing up to our newsletter!'
 
-}
-
-$send_email = Pony.mail(message)
-$send_email
+	}
+	p message   # p is like puts for debugging	
+	Pony.mail(message)
+end 
