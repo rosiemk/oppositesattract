@@ -18,7 +18,7 @@ end
 
 get('/welcome') do
 		
-		@name = params[:name].capitalize #@ makes name variable available in welcome template
+		@name = params[:name].capitalize # @ makes name variable available in welcome template
 		puts params
 	erb :welcome #value added to welcome page
 	
