@@ -2,6 +2,11 @@
 require 'pony'
 
 
+
+
+def send_email(name, email, body)  #function
+
+
 Pony.options = {
 	:via => 'smtp',
 	:via_options => {
@@ -19,14 +24,13 @@ Pony.options = {
 
 
 
-def send_email(name, email)  #function
-
-	message ={
+	print email
+	message = {
 	
 		:from => 'rvmunrokerr@gmail.com',
-		:to => "#{name}<#{email}>",   #string interpolation
+		:to => "#{@name}<#{@email}>",   #string interpolation
 		:subject => 'Welcome',
-		:body => 'Thanks for signing up to our newsletter!'
+		:body => "#{body}"
 
 	}
 	p message   # p is like puts for debugging	

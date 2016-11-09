@@ -29,12 +29,14 @@
 
 
 
-		<form method="post" action="/welcome" id="contact-form" class = "col-sm-8 col-centered">  <!--should action be /signup-->
+		<form method="post" action="/welcome" id="contact-form" class = "col-sm-8 col-centered">  <!--should action be /signup -->
 
 
 			<fieldset class="form-group">
 				<legend>Create a profile</legend>
 			 <div class="form-group">
+			 	<input type= "hidden" value= "<%= @name %>" name="name">
+			 	<input type= "hidden" value= "<%= @email %>" name="email">
 			   	<label for="name">Your Name</label>
 			   	<input type="name" class="form-control" id="name" placeholder="Password">
 			 </div>
