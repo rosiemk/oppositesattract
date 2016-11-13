@@ -28,8 +28,8 @@ Pony.options = {
 	message = {
 	
 		:from => 'rvmunrokerr@gmail.com',
-		:to => "#{@name}<#{@email}>",   #string interpolation
-		:subject => 'Welcome',
+		:to => "#{name}<#{email}>",   #string interpolation
+		:subject => 'Your UnMatch Awaits...',
 		:body => "#{body}"
 
 	}
