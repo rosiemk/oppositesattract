@@ -58,7 +58,7 @@ end
 
 post('/quiz') do
 		#@name = params[:name]
-		q1 = params[:q1]
+		@q1 = params[:q1]
 		#q2 = params[:q2]
 		#q3 = params[:q3]
 		#q4 = params[:q4]
@@ -76,13 +76,13 @@ post('/quiz') do
 
 body = " Your name is #{@name} and your email is #{@email}.
 
-You like #{q1}
+You like #{@q1}
 
 You have been matched with
 
 #{@name} and their email is #{@email}
  
- and they like #{q1}
+ and they like #{@q1}
 
 Have fun!
 

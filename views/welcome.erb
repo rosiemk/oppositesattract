@@ -33,16 +33,15 @@
 
 
 			<fieldset class="form-group">
-				<legend>Create a profile</legend>
+				<legend>Create your profile</legend>
 			 <div class="form-group">
 			 	<input type= "hidden" value= "<%= @name %>" name="name">
 			 	<input type= "hidden" value= "<%= @email %>" name="email">
-			   	<label for="name">Your Name</label>
-			   	<input type="name" class="form-control" id="name" placeholder="Password">
+			   	
 			 </div>
 
 			 <fieldset class="form-group">
-				<p>Your age</p>
+				<p>What's your age?</p>
 			 <div class="form-check">
 			    <label class="form-check-label">
 			      <input type="checkbox" class="form-check-input">
@@ -86,12 +85,12 @@
 			</fieldset>
 
 			  <div class="form-group">
-			    <label for="furtherInformation">Write some information about yourself.  Don't make it boring.</label>
+			    <label for="furtherInformation">Write some info about yourself.  Don't make it boring.</label>
 			    <textarea class="form-control" id="information" rows="3"></textarea>
 			  </div>
 
 			  <div class="form-group">
-			    <label for="exampleInputFile">Upload a profile picture</label>
+			    <label for="exampleInputFile">Upload your profile picture</label>
 			    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
 			    <small id="fileHelp" class="form-text text-muted">Make sure you look nice.</small>
 			  </div>
