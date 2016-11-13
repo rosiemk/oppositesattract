@@ -21,7 +21,7 @@ end
 post('/signup') do  # creating user, send email.
 	@name = params[:name].capitalize
 	@email = params[:email].downcase
-	add_to_json(@name, @email, @q1)  #this line was the only problem...not too sure why this is not working...
+	# add_to_json(@name, @email, @q1)  #this line was the only problem...not too sure why this is not working...
 
 	puts params
     redirect "/welcome?name=#{@name}&email=#{@email}"
@@ -58,39 +58,40 @@ end
 
 post('/quiz') do
 		#@name = params[:name]
-		@q1 = params[:q1]
+		q1 = params[:q1]
 		#q2 = params[:q2]
 		#q3 = params[:q3]
 		#q4 = params[:q4]
 		#q5 = params[:q5]
-		#puts q1
+		puts q1
 		#puts q2
 		#puts q3
 		#puts q4
 		#puts q5
 		# questions 1-5 get answers from quiz and store as vaiables.
 
-@name = params[:name]
-@email = params[:email]
+	@name = params[:name]
+	@email = params[:email]
 
+	add_to_json(@name, @email, q1)
 
-body = " Your name is #{@name} and your email is #{@email}.
+	body = " Your name is #{@name} and your email is #{@email}.
 
-You like #{@q1}
+	You like #{q1}
 
-You have been matched with
+	You have been matched with
 
-#{@name} and their email is #{@email}
- 
- and they like #{@q1}
+	#{@name} and their email is #{@email}
+	 
+	 and they like #{q1}
 
-Have fun!
+	Have fun!
 
-"
+	"
 
-send_email(@name, @email, body)  
+	send_email(@name, @email, body)  
 
-redirect "/thankyou"
+	redirect "/thankyou"
 
 end
 
