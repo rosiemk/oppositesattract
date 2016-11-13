@@ -1,6 +1,5 @@
 require './email'
 require 'sinatra'
-require 'sinatra/activerecord'
 require 'json'
 #require_relative 'oppositesattract/jsonfile.rb'  
 
